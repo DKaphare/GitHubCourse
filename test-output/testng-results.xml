@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-15T12:12:28 IST" name="Default suite" finished-at="2024-04-15T12:12:34 IST" duration-ms="5514">
+    <groups>
+    </groups>
+    <test started-at="2024-04-15T12:12:28 IST" name="Default test" finished-at="2024-04-15T12:12:34 IST" duration-ms="5514">
+      <class name="com.qa.registration.tests.RegistrationTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.registration.tests.RegistrationTest@6d4d66d2]" started-at="2024-04-15T12:12:28 IST" name="setup" finished-at="2024-04-15T12:12:33 IST" duration-ms="5253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="RegPageURLTest()[pri:1, instance:com.qa.registration.tests.RegistrationTest@6d4d66d2]" started-at="2024-04-15T12:12:33 IST" name="RegPageURLTest" finished-at="2024-04-15T12:12:33 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegPageURLTest -->
+        <test-method signature="RegPageTitleTest()[pri:2, instance:com.qa.registration.tests.RegistrationTest@6d4d66d2]" started-at="2024-04-15T12:12:33 IST" name="RegPageTitleTest" finished-at="2024-04-15T12:12:34 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegPageTitleTest -->
+        <test-method signature="isAccDisplayed()[pri:4, instance:com.qa.registration.tests.RegistrationTest@6d4d66d2]" started-at="2024-04-15T12:12:34 IST" name="isAccDisplayed" finished-at="2024-04-15T12:12:34 IST" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isAccDisplayed -->
+        <test-method signature="doRegistration()[pri:10, instance:com.qa.registration.tests.RegistrationTest@6d4d66d2]" started-at="2024-04-15T12:12:34 IST" name="doRegistration" finished-at="2024-04-15T12:12:34 IST" duration-ms="56" status="FAIL">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[class org.openqa.selenium.remote.RemoteWebElement cannot be cast to class java.util.List (org.openqa.selenium.remote.RemoteWebElement is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: class org.openqa.selenium.remote.RemoteWebElement cannot be cast to class java.util.List (org.openqa.selenium.remote.RemoteWebElement is in unnamed module of loader 'app'; java.util.List is in module java.base of loader 'bootstrap')
+at com.qa.registration.utility.ElementUtill.waitForElementVisible1(ElementUtill.java:182)
+at com.qa.registration.pages.RegistrationPage.doRegistration(RegistrationPage.java:64)
+at com.qa.registration.tests.RegistrationTest.doRegistration(RegistrationTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.registration.tests.RegistrationTest@6d4d66d2]" started-at="2024-04-15T12:12:34 IST" name="tearDown" finished-at="2024-04-15T12:12:34 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.registration.tests.RegistrationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
